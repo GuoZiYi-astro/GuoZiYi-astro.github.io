@@ -1,0 +1,4 @@
+baseURL = "https://GuoZiYi-astro.github.io/"
+languageCode = "en"
+title = "Ziyi Guo"
+theme = "blowfish"
