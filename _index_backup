@@ -1,0 +1,324 @@
+---
+title: "Ziyi Guo"
+---
+
+**Connection between Theory and Observations.**
+
+I use chemical fingerprints in galaxies to understand how galaxies evolve across cosmic time.
+
+My research connects observations with galaxy intrinsic physical conditions, aiming to constrain the stellar initial mass function, stellar yields, and star-formation histories in nearby and distant galaxies.
+
+[Research](/research/) · [Publications](/publications/) · [CV](/cv/)
+
+---
+
+## Research Themes
+
+### CO isotopologues as IMF tracers
+
+Using ¹³CO/C¹⁸O ratios to probe IMF variations in high-redshift galaxies.
+
+### Galactic chemical evolution modeling
+
+Developing GCE models that connect stellar yields, galaxy evolution, and observed abundance patterns.
+
+### Star formation across cosmic time
+
+Combining observations to investigate the star-formation modes of galaxies from cosmic noon to the early Universe.
+
+
+<style>
+/* Homepage wrapper */
+.home-hero {
+  position: relative;
+  min-height: 82vh;
+  margin: -2rem calc(50% - 50vw) 0 calc(50% - 50vw);
+  padding: 0 6vw;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  align-items: center;
+  overflow: hidden;
+  background: #020711;
+  color: white;
+}
+
+/* Two background halves */
+.home-hero::before,
+.home-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.42;
+  z-index: 0;
+}
+
+.home-hero::before {
+  left: 0;
+  background-image: linear-gradient(to right, rgba(2,7,17,0.2), rgba(2,7,17,0.92)), url("/images/home/observation.jpg");
+}
+
+.home-hero::after {
+  right: 0;
+  background-image: linear-gradient(to left, rgba(2,7,17,0.2), rgba(2,7,17,0.92)), url("/images/home/theory.jpg");
+}
+
+/* Vertical connection line */
+.home-hero-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.8), transparent);
+  z-index: 1;
+}
+
+/* Golden arc */
+.home-hero-arc {
+  position: absolute;
+  width: 46vw;
+  height: 46vw;
+  border: 1px solid rgba(230, 170, 70, 0.65);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 35px rgba(230, 170, 70, 0.16);
+  z-index: 1;
+}
+
+.home-hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-decoration {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-side {
+  max-width: 360px;
+}
+
+.hero-side h2 {
+  font-size: 1.1rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #e6aa46;
+  margin-bottom: 1rem;
+}
+
+.hero-side.left h2 {
+  color: #7ec8ff;
+}
+
+.hero-side p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.82);
+}
+
+.hero-list {
+  margin-top: 2rem;
+  display: grid;
+  gap: 0.9rem;
+  color: rgba(255,255,255,0.82);
+}
+
+.hero-list span {
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 0.65rem;
+}
+
+.hero-center {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-center h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-subtitle {
+  color: #e6aa46;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-statement {
+  max-width: 620px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.9);
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons a {
+  border: 1px solid rgba(255,255,255,0.42);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.35rem;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.hero-buttons a:hover {
+  border-color: #e6aa46;
+  color: #e6aa46;
+}
+
+/* Sections below hero */
+.home-section {
+  margin-top: 4rem;
+}
+
+.section-title {
+  text-align: center;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #e6aa46;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.highlight-card {
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background: rgba(255,255,255,0.035);
+}
+
+.highlight-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.highlight-card div {
+  padding: 1.2rem;
+}
+
+.highlight-card h3 {
+  margin-top: 0;
+}
+
+.highlight-card p {
+  color: var(--tw-prose-body);
+}
+
+.theme-line {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.theme-node {
+  position: relative;
+  padding: 1rem;
+}
+
+.theme-node::before {
+  content: "";
+  display: block;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  border: 1px solid rgba(230,170,70,0.8);
+  background: radial-gradient(circle, rgba(230,170,70,0.25), rgba(255,255,255,0.03));
+  box-shadow: 0 0 25px rgba(230,170,70,0.18);
+}
+
+.theme-node h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.theme-node p {
+  font-size: 0.92rem;
+}
+
+.home-quote {
+  margin: 4rem calc(50% - 50vw) 0 calc(50% - 50vw);
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(rgba(2,7,17,0.72), rgba(2,7,17,0.9)), url("/images/home/starry-sky.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.home-quote p {
+  font-size: 1.45rem;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+/* Mobile layout */
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    padding: 5rem 6vw;
+    text-align: center;
+  }
+
+  .home-hero::before,
+  .home-hero::after {
+    width: 100%;
+  }
+
+  .home-hero::after {
+    display: none;
+  }
+
+  .home-hero-arc,
+  .home-hero-line {
+    display: none;
+  }
+
+  .hero-side {
+    max-width: none;
+  }
+
+  .hero-side.right {
+    margin-top: 2rem;
+  }
+
+  .highlight-grid,
+  .theme-line {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+

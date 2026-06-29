@@ -1,0 +1,456 @@
+/* =====================================================
+   Main hero layout
+   ===================================================== */
+
+.home-hero {
+
+    position: relative;
+
+    width: 100vw;
+    min-height: 90vh;
+
+    margin-left: calc(50% - 50vw);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows: 1fr;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    padding: 0 6vw;
+
+}
+
+
+/* =====================================================
+   Background decoration
+   ===================================================== */
+
+
+.hero-decoration {
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+
+
+/* vertical connection line */
+
+.home-hero-line {
+
+    position:absolute;
+
+    top:0;
+
+    bottom:0;
+
+    left:50%;
+
+    width:1px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255,255,255,0.7),
+        transparent
+    );
+
+}
+
+
+
+/* central circle */
+
+.home-hero-arc {
+
+    position:absolute;
+
+    width:48vw;
+
+    height:48vw;
+
+
+    left:50%;
+
+    top:50%;
+
+
+    transform:
+    translate(-50%,-50%);
+
+
+    border:
+
+    1px solid rgba(230,170,70,0.65);
+
+
+    border-radius:50%;
+
+
+    box-shadow:
+
+    0 0 35px rgba(230,170,70,0.18);
+
+}
+
+
+
+/* =====================================================
+   Three columns
+   ===================================================== */
+
+
+.hero-side,
+.hero-center {
+
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+/* Observation */
+
+.hero-side.left {
+
+    grid-column:1;
+
+    justify-self:start;
+
+    text-align:left;
+
+}
+
+
+
+/* Name */
+
+.hero-center {
+
+
+    grid-column:2;
+
+
+    justify-self:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+/* Theory */
+
+.hero-side.right {
+
+
+    grid-column:3;
+
+
+    justify-self:end;
+
+
+    text-align:right;
+
+
+}
+
+
+
+/* =====================================================
+   Text style
+   ===================================================== */
+
+
+.hero-side {
+
+
+    width:100%;
+
+    max-width:300px;
+
+}
+
+
+
+.hero-side h2 {
+
+
+    font-size:1rem;
+
+    letter-spacing:0.35em;
+
+    text-transform:uppercase;
+
+    margin-bottom:1.2rem;
+
+
+}
+
+
+
+.hero-side.left h2 {
+
+    color:#7ec8ff;
+
+}
+
+
+
+.hero-side.right h2 {
+
+    color:#e6aa46;
+
+}
+
+
+
+.hero-side p {
+
+
+    color:rgba(255,255,255,0.85);
+
+    line-height:1.7;
+
+}
+
+
+
+.hero-list {
+
+
+    margin-top:1.8rem;
+
+
+}
+
+
+
+.hero-list span {
+
+
+    display:block;
+
+
+    padding:
+
+    0.8rem 0;
+
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,0.15);
+
+
+    color:
+
+    rgba(255,255,255,0.85);
+
+}
+
+
+
+/* =====================================================
+   Center content
+   ===================================================== */
+
+
+.hero-center h1 {
+
+
+    font-size:
+
+    clamp(3rem,6vw,5.5rem);
+
+
+    line-height:0.95;
+
+
+    margin-bottom:1rem;
+
+
+    color:white;
+
+}
+
+
+
+.hero-subtitle {
+
+
+    color:#e6aa46;
+
+
+    letter-spacing:
+
+    0.25em;
+
+
+    text-transform:uppercase;
+
+
+    font-weight:700;
+
+
+    margin-bottom:1.5rem;
+
+
+}
+
+
+
+.hero-statement {
+
+
+    max-width:500px;
+
+
+    margin:auto;
+
+
+    font-size:1.15rem;
+
+
+    line-height:1.8;
+
+
+    color:
+
+    rgba(255,255,255,0.9);
+
+
+}
+
+
+
+.hero-buttons {
+
+
+    margin-top:2rem;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:1rem;
+
+
+}
+
+
+
+.hero-buttons a {
+
+
+    padding:
+
+    0.7rem 1.2rem;
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.35);
+
+
+    border-radius:0.3rem;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+.hero-buttons a:hover {
+
+
+    border-color:#e6aa46;
+
+
+    color:#e6aa46;
+
+
+}
+
+
+
+/* =====================================================
+   Mobile
+   ===================================================== */
+
+
+@media(max-width:900px){
+
+
+.home-hero {
+
+
+    grid-template-columns:1fr;
+
+
+    min-height:auto;
+
+
+    padding:
+
+    5rem 8vw;
+
+
+}
+
+
+
+.hero-side.left,
+.hero-center,
+.hero-side.right {
+
+
+    grid-column:1;
+
+
+    justify-self:center;
+
+
+    text-align:center;
+
+
+    margin-bottom:3rem;
+
+
+}
+
+
+
+.home-hero-arc,
+.home-hero-line {
+
+    display:none;
+
+}
+
+
+}
