@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
-    <loc>http://localhost:1313/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-</urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://guoziyi-astro.github.io/</loc><lastmod>2026-06-25T16:49:51+08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://guoziyi-astro.github.io/cv/</loc><lastmod>2026-06-25T16:49:51+08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://guoziyi-astro.github.io/outreach/</loc><lastmod>2026-06-25T16:49:51+08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://guoziyi-astro.github.io/publications/</loc><lastmod>2026-06-25T16:49:51+08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://guoziyi-astro.github.io/research/</loc><lastmod>2026-06-25T16:49:51+08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://guoziyi-astro.github.io/talks/</loc><lastmod>2026-06-25T16:49:51+08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://guoziyi-astro.github.io/about/</loc><lastmod>2026-06-25T16:49:45+08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url></urlset>
